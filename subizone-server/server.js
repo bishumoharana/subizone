@@ -9,7 +9,7 @@ const port = 3001;
 
 // Specify the directory where your videos are stored
 // Replace '/path/to/your/videos' with the actual path to your videos
-const videosDir = '/Users/beetit/Documents/tigSpore';
+const videosDir = '/Users/beetit/Documents/tigSpore/MaterialDemo';
 
 // We define a new route '/api/videos' that the client will fetch the video list from
 app.get('/api/videos', (req, res) => {
