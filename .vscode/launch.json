@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Server",
+      "program": "${workspaceFolder}/subizone-server/server.js",
+      "cwd": "${workspaceFolder}/subizone-server"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Client",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/subizone/src"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Launch Server and Client",
+      "configurations": ["Launch Server", "Launch Client"]
+    }
+  ]
+}
