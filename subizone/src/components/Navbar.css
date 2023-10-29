@@ -11,4 +11,10 @@
 .navbar a {
   text-decoration: none;
   color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  color: #ab0202; /* Adjust as needed */
 }
