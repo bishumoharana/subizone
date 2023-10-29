@@ -1,6 +1,28 @@
 .App {
   display: flex;
+  flex-direction: column;
   height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  height: calc(100vh - 60px); /* Subtract the height of the navbar */
+  margin-top: 60px; /* Height of the navbar */
 }
 
 .video-list {
@@ -11,7 +33,7 @@
 
 .video-player {
   flex: 0.7;
-  background-color: #d0d0d0; /* Dark grey */
+  background-color: #d0d0f0; /* Dark grey */
   padding: 20px;
 }
 

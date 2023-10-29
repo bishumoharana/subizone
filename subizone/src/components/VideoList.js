@@ -5,7 +5,8 @@ function VideoList({ onSelectVideo }) {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/videos')
+    // fetch('http://localhost:3001/api/videos')
+    fetch('http://192.168.0.220:3001/api/videos')
       .then(response => response.json())
       .then(data => setVideos(data));
   }, []);

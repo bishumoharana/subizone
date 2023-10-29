@@ -6,7 +6,7 @@ function VideoPlayer({ videoUrl, videoName }) {
     <div className="video-player">
       <h2>Video Player</h2>
       {videoName && <h3>Now Playing: {videoName}</h3>}
-      <video controls>
+      <video controls key={videoUrl}>
         <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
