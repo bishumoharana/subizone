@@ -2,10 +2,14 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const cors = require('cors'); // Import the CORS module
 
 // We initialize our Express application
 const app = express();
 const port = 3001;
+
+// Use CORS middleware
+app.use(cors());
 
 // Specify the directory where your videos are stored
 // Replace '/path/to/your/videos' with the actual path to your videos

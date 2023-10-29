@@ -1,0 +1,11 @@
+.video-player {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-player video {
+    width: 80%; /* Adjust as needed */
+  }
+  

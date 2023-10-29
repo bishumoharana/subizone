@@ -1,0 +1,16 @@
+.video-list {
+    padding: 20px;
+  }
+  
+  .video-item {
+    padding: 10px;
+  }
+  
+  .video-item.even {
+    background-color: #f0f0f0; /* Light grey for even items */
+  }
+  
+  .video-item.odd {
+    background-color: #d0d0d0; /* Dark grey for odd items */
+  }
+  
