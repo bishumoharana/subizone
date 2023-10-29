@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './VideoList.css';
 
-function VideoList() {
+function VideoList({ onSelectVideo }) {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ function VideoList() {
     <div className="video-list">
       <h2>Video List</h2>
       {videos.map((video, index) => (
-        <div key={video.id} className={`video-item ${index % 2 === 0 ? 'even' : 'odd'}`}>
+        <div key={video.id} className={`video-item ${index % 2 === 0 ? 'even' : 'odd'}`} onClick={() => onSelectVideo(video.url, video.name)}>
           <h3>{video.name}</h3>
           <p>URL: {video.url}</p>
         </div>
